@@ -1,0 +1,14 @@
+net "i_clk" loc = "B8"; 
+net "i_rst" loc = "H13";
+net "o_Q[0]" loc = "K14";
+net "o_Q[1]" loc = "K15";
+net "o_Q[2]" loc = "J15";
+
+#net "i_clk" loc = "B8"
+#net "i_rst" loc = "H13"
+#net "i_D[0]" loc = "R17"
+#net "i_D[1]" loc = "N17"
+#net "i_D[2]" loc = "L13"
+#net "o_Q[0]" loc = "K14"
+#net "o_Q[1]" loc = "K15"
+#net "o_Q[2]" loc = "J15"

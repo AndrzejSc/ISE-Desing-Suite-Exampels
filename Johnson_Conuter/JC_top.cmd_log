@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/Programowanie/Verilog/Johnson_Conuter/JC_top.xst" -ofn "E:/Programowanie/Verilog/Johnson_Conuter/JC_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tb_ucf.ucf -p xc6slx9-tqg144-2 JC_top.ngc JC_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JC_top_map.ncd JC_top.ngd JC_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tb_ucf.ucf -p xc6slx9-tqg144-2 JC_top.ngc JC_top.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JC_top_map.ncd JC_top.ngd JC_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tb_ucf.ucf -p xc6slx9-tqg144-2 JC_top.ngc JC_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tb_ucf.ucf -p xc6slx9-tqg144-2 JC_top.ngc JC_top.ngd  
+xst -intstyle ise -ifn "E:/Programowanie/Verilog/Johnson_Conuter/JC_top.xst" -ofn "E:/Programowanie/Verilog/Johnson_Conuter/JC_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc tb_ucf.ucf -p xc3s500e-fg320-4 JC_top.ngc JC_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o JC_top_map.ncd JC_top.ngd JC_top.pcf 
+par -w -intstyle ise -ol high -t 1 JC_top_map.ncd JC_top.ncd JC_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml JC_top.twx JC_top.ncd -o JC_top.twr JC_top.pcf -ucf tb_ucf.ucf 
+bitgen -intstyle ise -f JC_top.ut JC_top.ncd 
