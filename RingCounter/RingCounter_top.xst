@@ -1,0 +1,5 @@
+set -tmpdir "E:/Programowanie/Verilog/RingCounter/xst/projnav.tmp"
+set -xsthdpdir "E:/Programowanie/Verilog/RingCounter/xst"
+elaborate
+-ifn RingCounter_top.prj
+-ifmt mixed
